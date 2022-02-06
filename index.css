@@ -1,0 +1,27 @@
+body {
+  background-color: lightgrey;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+h1 {
+  font-weight: bold;
+
+  text-decoration: underline;
+}
+label {
+  color: blue;
+  font-weight: bold;
+}
+label:hover {
+  text-decoration: underline;
+  font-weight: 300;
+}
+textarea {
+  border-radius: 10px;
+  background-color: black;
+  color: green;
+  text-decoration: underline;
+  font-size: 18px;
+  border: none;
+  scrollbar-track-color: transparent;
+}
