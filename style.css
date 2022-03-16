@@ -11,17 +11,34 @@ h1 {
 label {
   color: blue;
   font-weight: bold;
+  font-size: 20px;
 }
 label:hover {
   text-decoration: underline;
-  font-weight: 300;
+  transition: text-decoration 0.2s;
 }
 textarea {
+  line-height: 26px;
+  font-size: 18px;
   border-radius: 10px;
+  padding-left: 20px;
+  font-weight: bold;
   background-color: black;
   color: green;
   text-decoration: underline;
-  font-size: 18px;
   border: none;
-  scrollbar-track-color: transparent;
+  overflow-y: hidden;
+  box-sizing: border-box;
+}
+footer {
+  margin-top: 30px;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
+footer a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  transition: text-decoration 0.3s;
 }

@@ -6,7 +6,7 @@ window.addEventListener('keydown', (keyPressed) => {
 
     const show = document.querySelector('textarea');
     show.scrollTop = show.scrollHeight; //textarea always on bottom 
-    
+    console.log(keyPressed)
     //check if shift key is pressed
     if(keyPressed.shiftKey){
         if(keyPressed.key == 'Shift' && codeSelected){
@@ -29,10 +29,10 @@ window.addEventListener('keydown', (keyPressed) => {
             show.innerHTML += `You Pressed ${keyPressed.key} Key Code: ${keyPressed.keyCode} \n`;
             return;
         }else if(codeSelected){
-            show.innerHTML += `You Pressed ${keyPressed.key} Key Code: ${keyPressed.keyCode} \n`; 
+            show.innerHTML += `You Pressed ${keyPressed.key} Key Code: ${keyPressed.keyCode} with CONTROL Pressed \n`; 
             return
         }else if(keyPressed.ctrlKey){
-            show.innerHTML += `You Pressed ${keyPressed.key} with CTRL key PRESSED \n`;
+            show.innerHTML += `You Pressed ${keyPressed.key} with CONTROL key PRESSED \n`;
             return 
         }else if(keyPressed.key == 'Control'){
             show.innerHTML += `You Pressed Control key \n`
